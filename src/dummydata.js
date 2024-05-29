@@ -253,44 +253,29 @@ export const online = [
 ];
 export const team = [
   {
-    cover: "./images/team/t1.webp",
-    name: "Ph.D Adrian Molises",
-    work: "DEVELOPER AND LEAD INSTRUCTOR",
+    cover: "./images/team/t1.jpg",
+    name: "Sourabh Bohare",
+    work: "Director",
   },
   {
-    cover: "./images/team/t2.webp",
-    name: "Ph.D Arthur MaGregor",
-    work: "DEVELOPER AND LEAD INSTRUCTOR",
+    cover: "./images/team/t2.jpg",
+    name: "Ambarish Abgul",
+    work: "Director",
   },
   {
     cover: "./images/team/t3.webp",
-    name: "Ph.D Anna Hanzen",
-    work: "DEVELOPER AND LEAD INSTRUCTOR",
+    name: "Pranav Kachare",
+    work: "Director",
   },
   {
-    cover: "./images/team/t4.webp",
-    name: "Ph.D Brian Wooden",
-    work: "DEVELOPER AND LEAD INSTRUCTOR",
+    cover: "./images/team/t4.jpg",
+    name: "Sagar Pokharkar",
+    work: " CHrO",
   },
   {
-    cover: "./images/team/t5.webp",
-    name: "Ph.D Adrian Molises",
-    work: "DEVELOPER AND LEAD INSTRUCTOR",
-  },
-  {
-    cover: "./images/team/t6.webp",
-    name: "Ph.D Arthur MaGregor",
-    work: "DEVELOPER AND LEAD INSTRUCTOR",
-  },
-  {
-    cover: "./images/team/t7.webp",
-    name: "Ph.D Anna Hanzen",
-    work: "DEVELOPER AND LEAD INSTRUCTOR",
-  },
-  {
-    cover: "./images/team/t8.webp",
-    name: "Ph.D Brian Wooden",
-    work: "DEVELOPER AND LEAD INSTRUCTOR",
+    cover: "./images/team/t5.jpg",
+    name: "Kshitij Ingole",
+    work: "CFO",
   },
 ];
 export const price = [
@@ -337,7 +322,8 @@ export const faq = [
     desc: "We start with one-on-one consultations to assess each student's unique strengths, challenges, and goals. Based on this, we create a customized learning plan with tailored resources and strategies to ensure effective learning and growth.",
   },
   {
-    title: "What makes Scholar Pro Connect LLP different from other consultancy services?",
+    title:
+      "What makes Scholar Pro Connect LLP different from other consultancy services?",
     desc: " Our distinct blend of personalized attention, expert consultants, and innovative technology sets us apart. We are committed to empowering each student's educational journey with tailored strategies and unwavering support. ",
   },
 ];
@@ -396,7 +382,7 @@ export const blog = [
     desc: " ",
     cover: "../images/blog/boys.jpg",
   },
-]
+];
 export const testimonal = [
   {
     id: 1,

@@ -39,7 +39,7 @@ const Header = () => {
           </ul>
           <div className="start">
             <div className="button">
-              <Link to="/login">Login/Register</Link>
+              <Link to="/Login">Login/Register</Link>
             </div>
           </div>
           <button className="toggle" onClick={() => setClick(!click)}>
