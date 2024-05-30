@@ -88,7 +88,7 @@ const Register = () => {
                                 placeholder="Enter Your Password"
                                 required
                             />
-                            <p className="">Enter Your ConfirmPassword:-</p>
+                            <p className="">Confirm Password:-</p>
 
                             <input
                                 type="password"
@@ -96,7 +96,7 @@ const Register = () => {
                                 onChange={(e) => setConfirmPassword(e.target.value)}
                                 className="flexSB"
                                 id="exampleInputEmail1"
-                                placeholder="Enter Your Phone"
+                                placeholder="Confirm your password"
                                 required
                             />
                             <button type="submit" className="primary-btn">Create Account</button>
