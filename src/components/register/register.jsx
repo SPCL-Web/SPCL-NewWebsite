@@ -45,10 +45,12 @@ const Register = () => {
 
         <>
 
-           
+
             <section className="contacts padding">
                 <div className="container shadow flexSB">
-                    <div className="left row"></div>
+                    <div className="left row">
+                        <img src="/images/logo.png" alt="Logo" />
+                    </div>
                     <div className="right row">
                         <h1>Create Account</h1>
                         <form action="" onSubmit={handleSubmit}>
@@ -113,7 +115,7 @@ const Register = () => {
 
 
 
-{/* 
+            {/* 
             <form action="" onSubmit={handleSubmit}>
 
                 <div className="mb-3">

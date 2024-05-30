@@ -58,30 +58,32 @@ const Login = () => {
 
       <section className="contacts padding">
         <div className="container shadow flexSB">
-          <div className="left row"></div>
+          <div className="left row">
+            <img src="/images/logo.png" alt="Logo" />
+          </div>
           <div className="right row">
             <h1>Login</h1>
             <form action="" onSubmit={handleSubmit}>
-            <p className="">Enter Your Email:-</p>
-          <input
-            type="email"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-            className="flexSB"
-            id="exampleInputEmail1"
-            placeholder="Enter Your Email "
-            required
-          />
-               <p className="">Enter Your Password:-</p>
-          <input
-            type="password"
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
-            className="flexSB"
-            id="exampleInputPassword1"
-            placeholder="Enter Your Password"
-            required
-          />
+              <p className="">Enter Your Email:-</p>
+              <input
+                type="email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                className="flexSB"
+                id="exampleInputEmail1"
+                placeholder="Enter Your Email "
+                required
+              />
+              <p className="">Enter Your Password:-</p>
+              <input
+                type="password"
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
+                className="flexSB"
+                id="exampleInputPassword1"
+                placeholder="Enter Your Password"
+                required
+              />
               <button type="submit" className="primary-btn">Login</button>
             </form>
             {/* <span>
@@ -94,7 +96,7 @@ const Login = () => {
 
 
 
-{/* 
+      {/* 
       <form action="" onSubmit={handleSubmit}>
 
         <div className="mb-3">
