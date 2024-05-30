@@ -2,9 +2,29 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import Head from "./Head";
 import "./header.css";
+import { useAuth } from "../../../context/auth";
+import { toast } from "react-toastify";
 
 const Header = () => {
   const [click, setClick] = useState(false);
+
+  const { auth, setAuth } = useAuth();
+
+
+  const handleLogout = () => {
+    //ham sirf user ko null kar rahe hai , baki sara data ko save karke rakhn ahi aisliye ham.
+
+    setAuth({
+      ...auth,
+      user: null,
+      token: "",
+    })
+    toast.success("User logout Successfully")
+    localStorage.removeItem("auth");
+
+
+
+  }
 
   return (
     <>
@@ -38,9 +58,24 @@ const Header = () => {
             </li>
           </ul>
           <div className="start">
-            <div className="button">
-              <Link to="/Login">Login/Register</Link>
-            </div>
+            {
+              !auth.user && <div className="button">
+                <Link to="/Login">Login</Link>
+
+              </div>
+            }
+            {
+              !auth.user && <div className="button">
+                <Link to="/Register">Register</Link>
+
+              </div>
+            }
+            {
+              auth.user && <div className="button">
+                <Link onClick={handleLogout}>Logout</Link>
+
+              </div>
+            }
           </div>
           <button className="toggle" onClick={() => setClick(!click)}>
             {click ? (
