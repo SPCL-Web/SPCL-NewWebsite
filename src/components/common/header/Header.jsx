@@ -56,6 +56,13 @@ const Header = () => {
             <li>
               <Link to="/contact">Contact</Link>
             </li>
+
+            {/* {
+              auth?.user?.role === 1
+            } */}
+            <li>
+              <Link to="/contact-admin">Contact-Admin</Link>
+            </li>
           </ul>
           <div className="start">
             {
