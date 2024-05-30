@@ -84,20 +84,21 @@ const Contact = () => {
           </div>
           <div className='right row'>
             <h1>Contact us</h1>
-            <p>We're open for any suggestion or just to have a chat</p>
+            <p>Let's connect today with Scholar Pro Connect LLP</p>
 
             <div className='items grid2'>
               <div className='box'>
                 <h4>ADDRESS:</h4>
-                <p>198 West 21th Street, Suite 721 New York NY 10016</p>
+                <p> Saibaba tower, Mahalakshmi, Mumbai</p>
               </div>
               <div className='box'>
                 <h4>EMAIL:</h4>
-                <p> info@yoursite.com</p>
+                <p> contact@scholarpro <br />connect.com
+</p>
               </div>
               <div className='box'>
                 <h4>PHONE:</h4>
-                <p> + 1235 2355 98</p>
+                <p>  +91 73507 32082 </p>
               </div>
             </div>
 
@@ -120,6 +121,7 @@ const Contact = () => {
                     value={phone}
                     onChange={(e) => setPhone(e.target.value)}
                 />
+                <br />
                 <br />
 
                 
@@ -151,8 +153,8 @@ const Contact = () => {
               <button className='primary-btn' type='submit'>Submit</button>
             </form>
 
-            <h3>Follow us here</h3>
-            <span>FACEBOOK TWITTER INSTAGRAM DRIBBBLE</span>
+            {/* <h3>Follow us here</h3>
+            <span>FACEBOOK TWITTER INSTAGRAM DRIBBBLE</span> */}
           </div>
         </div>
       </section>
