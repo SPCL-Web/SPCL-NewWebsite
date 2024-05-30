@@ -3,7 +3,7 @@ import userModel from "../model/userModel.js";
 import bcrypt from 'bcrypt';
 import { comparePassword } from "../helper/authHelper.js";
 import Jwt from 'jsonwebtoken';
-
+import contact from '../model/contact.js'
 
 
 export const registerController = async (req, res) => {
@@ -126,3 +126,77 @@ export const loginController = async (req, res) => {
 
     }
 }
+
+
+
+
+export  const createContact = async (req, res) => {
+    try {
+
+        const { name, phone, email, query } = req.body;
+
+        if (!name || !email || !phone || !query) {
+           
+                return res.status(404).json({
+                    success: false,
+                    msg: "All fields are required"
+                })
+          
+        }
+
+        const response =  await contact.create({name,phone,email,query});
+
+
+        // _____________________________________________OR____________________________________
+
+        // const newUser = new contact({name,phone,email,query});
+        // await newUser.save();
+
+        res.status(200).json({
+            success: true,
+            data:response,
+            msg: "Contact created successfully",
+        })
+
+    } catch (error) {
+        console.log("Error in Create Contact controller" + error);
+        res.status(404).json({
+            success: false,
+            msg: "Something went wrong While creating contact",
+            message: error.message
+        })
+
+    }
+}
+
+
+
+
+export const getContactDetails = async(req,res)=>{
+    try {
+
+        const response = await contact.find({});
+        if(!response){
+            return res.status(404).json({
+                success: false,
+                msg: "No Contact user Found",
+            })
+        }
+
+       return res.status(200).json({
+            success: true,
+           response,
+            msg: "Contact Details",
+        })
+        
+    } catch (error) {
+        console.log("Error in Get Contact controller" + error);
+        return res.status(404).json({
+            success: false,
+            message:"Something went wrong in Contact get  controller",
+        })
+        
+    }
+}
+
+
