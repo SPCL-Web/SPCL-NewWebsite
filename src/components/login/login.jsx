@@ -1,8 +1,8 @@
 
 import React, { useState } from "react";
 import axios from "axios";
-// import { useNavigate,Link } from "react-router-dom";
-import { toast } from "react-toastify";
+import { useNavigate,Link } from "react-router-dom";
+import toast from "react-hot-toast";
 import './login.css'
 import { useAuth } from "../../context/auth";
 
@@ -18,7 +18,7 @@ const Login = () => {
 
 
 
-  // const navigate = useNavigate();
+  const navigate = useNavigate();
 
   // form function
   const handleSubmit = async (e) => {
@@ -30,6 +30,7 @@ const Login = () => {
       });
       if (res && res.data.success) {
         toast.success("Login successfully");
+        navigate("/")
         setEmail("");
         setPassword("");
         setAuth({

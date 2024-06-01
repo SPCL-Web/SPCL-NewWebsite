@@ -1,8 +1,9 @@
 import axios from "axios";
 import React, { useState } from "react";
-// import { useNavigate,Link } from "react-router-dom";
-import { toast } from "react-toastify";
+import { useNavigate,Link } from "react-router-dom";
+// import { toast } from "react-toastify";
 import "./register.css";
+import toast from "react-hot-toast";
 
 
 
@@ -13,6 +14,7 @@ const Register = () => {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
     const [confirmPassword, setConfirmPassword] = useState("");
+    const navigate = useNavigate();
 
     // form function
     const handleSubmit = async (e) => {
@@ -27,7 +29,8 @@ const Register = () => {
             });
             if (res && res.data.success) {
                 toast.success("User Registered successfully");
-                // navigate("/login");
+                navigate("/login");
+                
                 setEmail("");
                 setPassword("");
                 setConfirmPassword("");
