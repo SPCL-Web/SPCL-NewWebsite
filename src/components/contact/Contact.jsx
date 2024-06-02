@@ -40,7 +40,7 @@ const Contact = () => {
 
   const getUserDetails = async () => {
     try {
-      const responseData = await axios.get('http://localhost:4000/api/v1/get-contact');
+      const responseData = await axios.get('/api/v1/get-contact');
       setData(responseData.data.response);
       // Initialize statuses based on fetched data
       const savedStatuses = JSON.parse(localStorage.getItem('statuses')) || [];
@@ -56,7 +56,7 @@ const Contact = () => {
     console.log(name, email, phone, query);
 
     try {
-      await axios.post('http://localhost:4000/api/v1/contact', {
+      await axios.post('/api/v1/contact', {
         name,
         email,
         phone,
