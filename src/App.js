@@ -51,7 +51,7 @@ import Home from "./components/home/Home";
 import Login from "./components/login/login";
 import Register from "./components/register/register";
 import ContactAdmin from "./components/contact/ContactAdmin";
-
+import RealBlog from './blogs/Blogs';
 function App() {
   return (
     <>
@@ -68,6 +68,7 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/Login" element={<Login />} />
           <Route path="/Register" element={<Register />} />
+          <Route path="/blog" element={<RealBlog />} />
         </Routes>
         <Footer />
       </Router>

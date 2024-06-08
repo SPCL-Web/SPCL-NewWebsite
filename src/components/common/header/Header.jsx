@@ -63,6 +63,9 @@ const Header = () => {
             <li>
               <Link to="/contact-admin">Contact-Admin</Link>
             </li>
+            <li>
+              <Link to="/blog">Visit Blog</Link>
+            </li>
           </ul>
           <div className="start">
             {
