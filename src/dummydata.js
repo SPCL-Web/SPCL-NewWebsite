@@ -49,6 +49,88 @@ export const awrapper = [
     title: "COURSES",
   },
 ];
+
+export const personalizedData = {
+  id: 10,
+  title: "Personalized Tutoring: Unlock the Door to Academic Success",
+  overview: {
+    description:
+      "Our Private Tutoring course is designed to provide personalized and focused academic support to students from 6th to 12th grade. Our goal is to enhance understanding, improve academic performance, and build confidence in students by addressing their unique learning needs. Whether it’s one-on-one sessions or small group classes, our experienced tutors are dedicated to creating a positive and effective learning environment.",
+    features: [
+      {
+        title: "Personalized Learning Plans:",
+        description:
+          "Each student receives a customized learning plan tailored to their strengths, weaknesses, and academic goals. This ensures that they receive the most relevant and effective instruction.",
+      },
+      {
+        title: "Qualified Tutors:",
+        description:
+          "Our team comprises highly qualified and experienced tutors who specialize in a wide range of subjects. They are committed to helping students achieve their full potential.",
+      },
+      {
+        title: "Flexible Scheduling:",
+        description:
+          "We offer flexible tutoring schedules to accommodate the busy lives of students and parents. Sessions can be scheduled after school, on weekends, or during holidays.",
+      },
+      {
+        title: "Interactive Sessions:",
+        description:
+          "Our tutoring sessions are interactive and engaging, incorporating a variety of teaching methods to cater to different learning styles. We use real-life examples, practical exercises, and multimedia resources to make learning enjoyable.",
+      },
+      {
+        title: "Progress Tracking:",
+        description:
+          "Regular assessments and progress reports are provided to track the student's improvement and to identify areas that need further attention. Parents are kept informed of their child's progress every step of the way.",
+      },
+      {
+        title: "Exam Preparation:",
+        description:
+          "Special focus is given to preparing students for school exams, board exams, and competitive entrance tests. Our tutors provide comprehensive revision, practice tests, and exam strategies to boost confidence and performance.",
+      },
+    ],
+  },
+  subjectsOffered: [
+    "Mathematics",
+    "Science (Physics, Chemistry, Biology)",
+    "English Language and Literature",
+    "Social Studies (History, Geography, Civics)",
+    "Computer Science",
+    "Languages (Hindi, Marathi, French, German, etc.)",
+    "Economics and Business Studies",
+  ],
+  enrollmentProcess: [
+    {
+      title: "Initial Assessment:",
+      description:
+        "An initial assessment is conducted to understand the student’s current academic level, strengths, and areas for improvement.",
+    },
+    {
+      title: "Consultation:",
+      description:
+        "A consultation with the student and parents to discuss the assessment results and create a tailored tutoring plan.",
+    },
+    {
+      title: "Tutor Matching:",
+      description:
+        "Students are matched with a tutor who best fits their academic needs and learning style.",
+    },
+    {
+      title: "Scheduling:",
+      description:
+        "Sessions are scheduled based on the student’s availability and convenience.",
+    },
+    {
+      title: "Start Learning:",
+      description:
+        "Begin the journey towards academic success with regular tutoring sessions and continuous support.",
+    },
+  ],
+  contactInfo: {
+    phone: "9049658326",
+    email: "contact@scholarproconnect.com",
+    website: "www.scholarproconnect.com",
+  },
+};
 export const coursesCard = [
   {
     id: 1,
