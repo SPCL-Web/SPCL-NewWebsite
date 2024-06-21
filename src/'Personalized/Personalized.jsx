@@ -1,6 +1,6 @@
 import React from 'react';
 import './Personalized.css';
-import { personalizedData } from '../../dummydata';
+import { personalizedData } from '../dummydata';
 
 const Personalized = () => {
   const data = personalizedData; 
